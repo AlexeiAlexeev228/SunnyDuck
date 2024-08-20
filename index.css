@@ -1,0 +1,244 @@
+body {
+  background: rgb(255,247,247);
+background: linear-gradient(0deg, rgba(255,247,247,1) 0%, rgba(255,218,149,1) 100%);
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  padding-left: 64px;
+  padding-top: 8px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.rounded-bar {
+  width: 100%;
+  height: 34px;
+  background-color: gold;
+  border-radius: 50px;
+  margin-top: 8px;
+}
+
+.shapka {
+  position: relative;
+}
+
+.telegram, .twitter {
+  position: absolute;
+  top: 3px;
+}
+
+.telegram {
+  right: 70px;
+  width: 29px;
+}
+
+.twitter {
+  right: 30px;
+  width: 39px;
+}
+
+.imgg {
+  width: 300px;
+  margin-top: 44px;
+  border: 5px solid #FFF;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marquee-container {
+  width: 100%;
+  height: 30px; /* Уменьшенная высота полосы */
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 10px; /* Регулировка отступа */
+}
+
+.marquee-text {
+  display: inline-block;
+  font-size: 16px; /* Уменьшение размера текста */
+  line-height: 30px; /* Высота строки для центрирования текста */
+  animation: marquee 100s linear infinite;
+  padding-top: 2px; /* Дополнительная настройка отступа */
+  font-family:  'Luckiest Guy';
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.who {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 29px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text-container {
+  max-width: 600px;
+  margin: 55px auto;
+  padding: 20px;
+  font-family: 'Luckiest Guy', cursive;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.text-container p {
+  margin: 0 0 20px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+}
+
+.text-container p:last-child {
+  margin-bottom: 0;
+}
+
+.gallery-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery img {
+  display: none;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.gallery img.active {
+  display: block;
+}
+
+.button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.button-left {
+  left: 10px;
+  top: 50%;
+}
+
+.button-right {
+  right: 10px;
+  top: 50%;
+}
+
+@keyframes reverse-marquee {
+  from {
+    transform: translateX(-80%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.marquee-container.bottom {
+  margin-top: 20px;
+}
+
+.marquee-container.bottom .marquee-text {
+  animation: reverse-marquee 350s linear infinite; /* Анимация в обратную сторону */
+}
+.ffff {
+    text-align: center;
+    margin-top: 140;
+    padding: 0;
+}
+.img5 img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.how-to-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.how-to-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.step {
+    background-color: white; /* Цвет блока */
+    color: black; /* Цвет текста */
+    width: 60%; /* Ширина блока */
+    padding: 20px;
+    border-radius: 15px; /* Скругленные углы */
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.step img {
+    width: 60px; /* Размер картинки */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Центрирование картинки и отступ снизу */
+}
+
+.step h2 {
+    font-size: 24px;
+    margin: 0; /* Сбросить все отступы */
+    padding: 0; /* Сбросить все поля */
+    text-align: center; /* Выровнять текст по центру */
+}
+
+
+.step p {
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+@media (min-width: 768px) {
+    .how-to-buy {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .step {
+        width: 45%; /* Ширина блока для больших экранов */
+        margin-bottom: 20px;
+    }
+}
+.ttg{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 144px;
+    text-align: center;
+}
